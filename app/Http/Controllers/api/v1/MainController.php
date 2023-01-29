@@ -45,16 +45,18 @@ class MainController extends Controller
             "obj_file",
         ])->get();
 
-        return response()->json([
+        $return = [
             "categories" => $categories,
             "categories_with_furnitures" => $categories_with_furnitures,
             "colors" => $colors,
             "colors_with_palette" => $colors_with_palette,
             "pattens" => $pattens,
-        ]);
+        ];
+
+        return view("index", compact("return"));
     }
 
     public function getContents(){
-        
+
     }
 }
