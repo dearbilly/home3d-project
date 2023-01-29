@@ -53,4 +53,8 @@ class MainController extends Controller
             "pattens" => $pattens,
         ]);
     }
+
+    public function getContents(){
+        
+    }
 }
