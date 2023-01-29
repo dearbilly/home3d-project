@@ -35,7 +35,7 @@ class CreateProjectsTable extends Migration
             $table->foreign('furniture_pattern_id')->references('id')->on('patterns')
                 ->onDelete('cascade');
 
-            $table->foreign('furniture_palette_color_id')->references('id')->on('colors')
+            $table->foreign('furniture_pattern_color_id')->references('id')->on('colors')
                 ->onDelete('cascade');
 
             $table->foreign('furniture_pattern_palette_id')->references('id')->on('palettes')
